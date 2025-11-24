@@ -1,0 +1,5 @@
+{
+  "name": "ProHeadshot AI",
+  "description": "使用 Gemini 2.5 Flash Image 将日常自拍转变为专业商务头像。上传照片，选择风格，让 AI 完善您的职业形象。",
+  "requestFramePermissions": []
+}
