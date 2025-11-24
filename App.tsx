@@ -43,7 +43,7 @@ const App: React.FC = () => {
       if (selectedStyleId === 'custom') {
         finalPrompt = customPrompt;
         if (!finalPrompt.trim()) {
-           finalPrompt = "Enhance this image to look more professional.";
+           finalPrompt = "优化这张图片，使其看起来更专业。";
         }
       } else {
         finalPrompt = `${style?.promptModifier || ''} ${customPrompt}`;
@@ -66,7 +66,7 @@ const App: React.FC = () => {
     if (generatedImage) {
       const link = document.createElement('a');
       link.href = generatedImage;
-      link.download = `pro-headshot-${selectedStyleId}-${Date.now()}.png`;
+      link.download = `职业照-${selectedStyleId}-${Date.now()}.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
